@@ -1,0 +1,10 @@
+version: '1.0'
+
+services:
+  bmtsys:
+    build: .
+    ports:
+      - 8081:8081
+    environment:
+      - DB_HOST=10.8.0.146
+    restart: always
